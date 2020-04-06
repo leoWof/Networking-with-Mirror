@@ -63,3 +63,5 @@ MonoBehaviour:
   syncInterval: 0.1
   FirstPlayerUnit: {fileID: 3074870223195360801, guid: bc92167521fa54646a003cce14cbf873,
     type: 3}
+  secondPlayerUnit: {fileID: 849373944848091285, guid: 3398e1c0484a6f6469d1b840602d5397,
+    type: 3}

@@ -7,6 +7,10 @@ using UnityEngine.Networking;
 public class PlayerConnexionObject : NetworkBehaviour
 {
     public GameObject FirstPlayerUnit;
+    public GameObject secondPlayerUnit;
+
+    private static int prefab_id = 0;
+    private GameObject currentPrefab; 
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +30,21 @@ public class PlayerConnexionObject : NetworkBehaviour
     [Command]
     void CmdSpawnMyUnit()
     {
-        GameObject go = Instantiate(FirstPlayerUnit);
+
+        if (prefab_id == 0)
+        {
+            currentPrefab = FirstPlayerUnit;
+            prefab_id = 1;
+        }
+
+        else
+        {
+            currentPrefab = secondPlayerUnit; 
+        }
+
+        
+    
+        GameObject go = Instantiate(currentPrefab);
         NetworkServer.Spawn(go,connectionToClient);
 
     }
