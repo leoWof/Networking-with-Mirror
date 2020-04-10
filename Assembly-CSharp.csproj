@@ -55,10 +55,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\bulletBehaviour.cs" />
+     <Compile Include="Assets\Script\FaceCamera.cs" />
+     <Compile Include="Assets\Script\Health.cs" />
      <Compile Include="Assets\Script\Move.cs" />
-     <Compile Include="Assets\Script\myNetworkManager.cs" />
-     <Compile Include="Assets\Script\Player_prefab_init.cs" />
      <Compile Include="Assets\Script\PlayerConnexionObject.cs" />
+     <Compile Include="Assets\Script\playerData.cs" />
+     <Compile Include="Assets\Script\setData.cs" />
      <Compile Include="Assets\Script\shot.cs" />
      <Compile Include="Assets\Script\upAndDown.cs" />
      <None Include="Assets\ScriptTemplates\54-Mirror__Network Room Manager-NewNetworkRoomManager.cs.txt" />

@@ -61,7 +61,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  FirstPlayerUnit: {fileID: 3074870223195360801, guid: bc92167521fa54646a003cce14cbf873,
+  FirstPlayerUnit: {fileID: 5771190303688582859, guid: 54563712340606143ba4025b2838de76,
     type: 3}
-  secondPlayerUnit: {fileID: 849373944848091285, guid: 3398e1c0484a6f6469d1b840602d5397,
+  secondPlayerUnit: {fileID: 2187177568407778745, guid: b220d300ca974ab4da49a1b93b2acec4,
     type: 3}
+  playerChoices:
+  - PlayerBlueChoice
+  - PlayerRedChoice
